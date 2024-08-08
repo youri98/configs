@@ -4,15 +4,17 @@
 ```bash
 brew tap homebrew/cask-fonts
 brew install --cask font font-meslo-lg-nerd-font
-brew install git fd ripgrep nvim
-
-git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+brew install git fd ripgrep nvim zoxide direnv
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+easy kickstart
+```bash
+git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 
 ```
 
-https://gist.github.com/n1snt/454b879b8f0b7995740ae04c5fb5b7df
 
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
@@ -22,7 +24,7 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZS
 ```
 
 ```bash
-
-git clone https://github.com/youri98/configs.git 
-
+cp ~/.zshrc ~/.zshrc_backup
+wget https://raw.githubusercontent.com/youri98/configs/main/.zshrc -O ~/.zshrc
+source ~/.zshrc
 ```
