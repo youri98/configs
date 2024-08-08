@@ -21,4 +21,8 @@ git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git ${ZS
 git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZSH_CUSTOM/plugins/zsh-autocomplete
 ```
 
+```bash
 
+git clone https://github.com/youri98/configs.git 
+
+```
