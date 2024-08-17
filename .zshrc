@@ -70,7 +70,16 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)
+plugins=(
+	git
+	python
+	zoxide
+	brew
+	colorize
+	#zsh-autosuggestions 
+	zsh-syntax-highlighting 
+	fast-syntax-highlighting 
+	zsh-autocomplete)
 
 
 source $ZSH/oh-my-zsh.sh
@@ -107,4 +116,6 @@ source $ZSH/oh-my-zsh.sh
 #
 eval "$(zoxide init zsh)"
 eval "$(direnv hook zsh)"
-
+alias jumbo-vpn-split="sh ~/.local/bin/jumbovpn"
+alias jumbo-vpn-full="sh ~/.local/bin/jumbovpn-full"
+alias adb=~/Library/Android/sdk/platform-tools/adb
