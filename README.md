@@ -7,7 +7,7 @@ brew tap homebrew/cask-fonts
 brew install --cask font font-meslo-lg-nerd-font
 
 # some usefull installations
-brew install git fd ripgrep nvim zoxide direnv
+brew install git fd ripgrep nvim zoxide direnv tmux
 
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -33,4 +33,11 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZS
 cp ~/.zshrc ~/.zshrc_backup
 wget https://raw.githubusercontent.com/youri98/configs/main/.zshrc -O ~/.zshrc
 source ~/.zshrc
+```
+
+```bash
+#tmux stuff
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+wget https://raw.githubusercontent.com/youri98/configs/main/.tmux.conf -O ~/.tmux.conf
+tmux source ~/.tmux.conf
 ```

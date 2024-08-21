@@ -119,3 +119,4 @@ eval "$(direnv hook zsh)"
 alias jumbo-vpn-split="sh ~/.local/bin/jumbovpn"
 alias jumbo-vpn-full="sh ~/.local/bin/jumbovpn-full"
 alias adb=~/Library/Android/sdk/platform-tools/adb
+alias jumbo-airflow-session="tmux attach-session -t jumbo-airflow"
