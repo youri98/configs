@@ -114,9 +114,23 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 #
+
+# standard extra stuff
 eval "$(zoxide init zsh)"
 eval "$(direnv hook zsh)"
+
+
+
+# tmux restore sessions after reboot
+tmux start-server
+tmux source-file ~/.tmux/resurrect/last
+
+
+
+# for android studio
+alias adb=~/Library/Android/sdk/platform-tools/adb
+
+# jumbo stuff
 alias jumbo-vpn-split="sh ~/.local/bin/jumbovpn"
 alias jumbo-vpn-full="sh ~/.local/bin/jumbovpn-full"
-alias adb=~/Library/Android/sdk/platform-tools/adb
 alias jumbo-airflow-session="tmux attach-session -t jumbo-airflow"
